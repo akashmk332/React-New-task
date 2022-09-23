@@ -1,0 +1,126 @@
+.header {
+  padding: 0px 5px;
+  height: 100px;
+  background-color: #567086;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.header ul li i,
+.header ul li a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.header ul li i {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.header ul li {
+  padding: 13px 22px;
+  cursor: pointer;
+}
+.header ul li a {
+  font-size: 15px;
+  font-weight: 500;
+}
+.header ul li:hover a,
+.header ul li:hover i {
+  color: #f5a623;
+}
+.header .logout a {
+  color: #fff;
+  font-size: 15px;
+}
+.header .logout a:hover {
+  color: #f5a623;
+}
+.active {
+  background-color: #f5a623;
+}
+.header ul li.active:hover a,
+.header ul li.active:hover i {
+  color: #fff;
+}
+.headermob {
+  display: none;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  width: 200px;
+  margin-left: 80px;
+  margin-right: 300px;
+  margin-top: 50px;
+}
+h1 h2 {
+  margin-left: 180px;
+}
+.logout {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.logout b:hover {
+  color: blue;
+  font-weight: bolder;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 0px;
+    display: none;
+  }
+  .headermob {
+    display: initial;
+  }
+  .headermob header {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #567086;
+  }
+  .headermob nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .headermob nav {
+    background-color: #567086;
+  }
+  .headermob nav ul a {
+    color: #fff;
+  }
+  .headermob nav ul a:hover {
+    color: #f5a623;
+    width: 100%;
+  }
+  .active {
+    background-color: initial;
+  }
+  .active a {
+    color: #f5a623;
+  }
+  h1 {
+    margin-left: 10px;
+  }
+  spam {
+    margin-right: 10px;
+  }
+  .logout {
+    margin: 10px;
+    font-weight: bolder;
+  }
+}

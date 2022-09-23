@@ -1,0 +1,19 @@
+.container > div {
+  background-color: #435c70;
+  padding: 40px;
+}
+.addproductmodal {
+  width: 60%;
+  margin-left: 190px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+  .container div:first-child {
+    width: 81%;
+    margin-bottom: 30px;
+  }
+}
